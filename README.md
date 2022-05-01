@@ -1,7 +1,5 @@
 # Table
 
-![build](https://github.com/samhuk/tree-starter/actions/workflows/build.yaml/badge.svg)
-
 Generic table component
 
 ## Development Deployment

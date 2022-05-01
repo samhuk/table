@@ -4,14 +4,12 @@
   "include": [
     "./"
   ],
-  "exclude": [
-    "**/*.sql"
-  ],
   "compilerOptions": {
     "target": "es2017",
-    "declaration": false,
+    "declaration": true,
     "sourceMap": false,
     "noEmit": false,
-    "outDir": "../../build/server"
+    "outDir": "../../build-tsc/component",
+    "skipLibCheck": true
   }
 }

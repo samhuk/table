@@ -1,6 +1,7 @@
 node_modules
 build
 buildScripts/build
+build-tsc
 .DS_Store
 debug.log
 package-lock.json
