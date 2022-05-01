@@ -8,6 +8,7 @@ Vanilla JS data table component.
 
 `npm i @samhuk/table`
 
+### Usage in JS/TS
 Basic usage (default column options, no custom configuration, etc.):
 
 ```typescript
@@ -15,7 +16,7 @@ import { createTable } from '@samhuk/table'
 
 const element = document.createElement('div')
 
-// Create table with 3 columns - A, B, and C, with 3 rows of data
+// Create table with 3 column and 3 rows of data
 const table = createTable({
   columnOrdering: ['A', 'B', 'C'],
   initialData: [
@@ -27,6 +28,22 @@ const table = createTable({
 
 element.appendChild(table.rendered.element)
 ```
+
+### Importing Styles
+
+There are two main ways of importing the styles for the component into your project. One can either:
+
+1. `import` the scss entrypoint or css bundle file into your .ts or .js file. This is supported by all the main bundlers out there like webpack and esbuild as long as you have the required loader/plugin for scss or css files configured.
+    ```typescript
+    // Import the scss entrypoint file from the src
+    import 'node_modules/@samhuk/table/src/component/styles/index.scss'
+    // Import the css bundle file
+    import 'node_modules/@samhuk/table/dist/styles.css'
+    ```
+2. `@import` the scss entrypoint file into your scss file.
+    ```scss
+    @import '~@samhuk/table/src/component/styles/index.scss';
+    ```
 
 ## Features
 
