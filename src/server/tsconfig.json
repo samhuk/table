@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+  "extends": "../../tsconfig.json",
+  "include": [
+    "../common",
+    "./"
+, "../component/helpers/dict.ts", "../component/helpers/geometry.ts", "../component/helpers/string.ts"  ],
+  "exclude": [
+    "**/*.sql"
+  ],
+  "compilerOptions": {
+    "target": "es2017",
+    "declaration": false,
+    "sourceMap": false,
+    "noEmit": false,
+    "outDir": "../../build/server"
+  }
+}

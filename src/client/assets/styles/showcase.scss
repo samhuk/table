@@ -1,0 +1,20 @@
+.showcase {
+  .nav {
+    margin-bottom: 20px;
+    font-size: 18px;
+    flex-flow: wrap;
+  }
+
+  .item {
+    .operations {
+      margin-bottom: 20px;
+    }
+
+    .component {
+      @extend .box;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+  }
+}

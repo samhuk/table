@@ -1,0 +1,43 @@
+@import './colors.scss';
+@import './borders.scss';
+
+.borderless-link {
+  font-size: 18px;
+  color: $link-color;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px;
+  border-radius: $border-radius;
+  background: initial;
+  border: none;
+}
+
+.button {
+  border: $border;
+  background-color: $primary-background-color;
+  border-radius: $border-radius;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 14px;
+
+  &:hover {
+    background-color: darken($primary-background-color, 5);
+    border-color: darken($border-color, 10);
+    transition: background-color 0.15s linear;
+  }
+}
+
+.button--white {
+  @extend .button;
+}
+
+button[disabled] {
+  cursor: initial;
+  background-color: darken($primary-background-color, 5);
+  border-color: darken($border-color, 10);
+  color: #888;
+
+  i {
+    color: #888;
+  }
+}

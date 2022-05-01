@@ -1,0 +1,12 @@
+@import './flex.scss';
+
+.centered-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &>* {
+    width: $desktop-width-large;
+    overflow: hidden;
+  }
+}
