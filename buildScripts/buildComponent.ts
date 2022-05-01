@@ -6,7 +6,7 @@ import { createBuilder } from './buildCommon'
 const prod = process.env.NODE_ENV === 'production'
 const ENTRYPOINT_PATH = './src/component/index.ts'
 const OUTPUT_DIR = './build/component'
-const OUTPUT_JS_FILENAME = 'out.js'
+const OUTPUT_JS_FILENAME = 'index.js'
 
 export const buildComponent = createBuilder('client', () => esbuild.build({
   entryPoints: [ENTRYPOINT_PATH],
