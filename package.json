@@ -1,11 +1,12 @@
 {
   "name": "@samhuk/table",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Vanilla JS data table component",
-  "main": "build-tsc/component/index.js",
-  "types": "build-tsc/component/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "build-tsc/component/**/*"
+    "dist/**/*",
+    "src/component/**/*"
   ],
   "repository": "https://github.com/samhuk/table",
   "scripts": {
@@ -17,10 +18,9 @@
     "watch-client-dev": "env-cmd -e dev node ./buildScripts/build/watchClient.js",
     "watch-server-dev": "env-cmd -e dev node ./buildScripts/build/watchServer.js",
     "start": "npm run build-build && concurrently -n \"ui ,api\" -c \"cyan,blue\" \"npm run watch-client-dev\" \"npm run watch-server-dev\"",
-    "build-component-dev": "npm run build-build && env-cmd -e dev node ./buildScripts/build/buildComponentScript.js",
-    "build-component-prod": "npm run build-build && env-cmd -e prod node ./buildScripts/build/buildComponentScript.js",
-    "build-dts": "tsc --project ./src/component/tsconfig.json",
-    "build": "npm run build-component-prod && npm run build-dts"
+    "build-component-ts": "tsc --project ./src/component/tsconfig.json",
+    "build-component-styles": "env-cmd -e prod node ./buildScripts/build/buildComponentStylesScript.js",
+    "build-component": "npm run build-build && npm run build-component-ts && npm run build-component-styles"
   },
   "author": "samhuk",
   "license": "MIT",

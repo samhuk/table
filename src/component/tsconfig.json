@@ -9,7 +9,7 @@
     "declaration": true,
     "sourceMap": false,
     "noEmit": false,
-    "outDir": "../../build-tsc/component",
+    "outDir": "../../dist",
     "skipLibCheck": true
   }
 }

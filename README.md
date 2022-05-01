@@ -15,6 +15,7 @@ import { createTable } from '@samhuk/table'
 
 const element = document.createElement('div')
 
+// Create table with 3 columns - A, B, and C, with 3 rows of data
 const table = createTable({
   columnOrdering: ['A', 'B', 'C'],
   initialData: [
@@ -23,6 +24,8 @@ const table = createTable({
     { a: 7, b: 8, c: 9 }
   ]
 })
+
+element.appendChild(table.rendered.element)
 ```
 
 ## Features

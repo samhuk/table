@@ -7,7 +7,6 @@ $font-family: 'Roboto', sans-serif;
 
 @import './colors.scss';
 @import './root-header.scss';
-@import './table.scss';
 @import './resizer.scss';
 @import './showcase.scss';
 @import './nav.scss';
@@ -15,6 +14,8 @@ $font-family: 'Roboto', sans-serif;
 @import './boxes.scss';
 @import './buttons.scss';
 @import './headers.scss';
+
+@import '../../../component/styles/index.scss';
 
 html {
   height: 100vh;
