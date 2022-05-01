@@ -5,7 +5,7 @@ import { CustomBuildResult, printBuildResult } from './buildCommon'
 import { watch } from 'chokidar-debounced'
 
 const SERVER_BUILD_OUTPUT_ENTRYPOINT_PATH = './build/server/out.js'
-const DIRS = ['./src/server', './src/common']
+const DIRS = ['./src/server']
 
 let serverProc: ChildProcess = null
 

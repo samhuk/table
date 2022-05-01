@@ -4,7 +4,7 @@ import { CustomBuildResult, printBuildResult } from './buildCommon'
 import { watch } from 'chokidar-debounced'
 
 const buildVerbosity = process.env.BUILD_VERBOSITY != null ? parseInt(process.env.BUILD_VERBOSITY) : 1
-const DIRS = ['./src/client', './src/common']
+const DIRS = ['./src/client', './src/component']
 
 const startRebuildWatch = (buildResult: CustomBuildResult) => {
   watch(() => {

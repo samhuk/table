@@ -2,7 +2,7 @@
   "$schema": "http://json.schemastore.org/tsconfig",
   "extends": "../../tsconfig.json",
   "include": [
-    "../common",
+    "../component",
     "./"
 , "../component/helpers/dict.ts", "../component/helpers/geometry.ts", "../component/helpers/string.ts"  ],
   "compilerOptions": {
