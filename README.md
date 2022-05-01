@@ -25,6 +25,15 @@ const table = createTable({
 })
 ```
 
+## Features
+
+* Column sorting
+* Column filter button
+* Footer row
+* Row grouping (with group header row)
+* Customizable row and cell rendering
+* More
+
 ## Development Deployment
 
 One must have node and npm installed. Get node from [nodejs.org](https://nodejs.org/en/download/).
