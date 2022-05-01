@@ -1,12 +1,12 @@
 {
   "name": "@samhuk/table",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Vanilla JS data table component",
   "main": "build/component/index.js",
   "types": "build-tsc/component/index.d.ts",
   "files": [
     "build/component/index.js",
-    "build-tsc/component/*/**.d.ts"
+    "build-tsc/component/**/*.d.ts"
   ],
   "repository": "https://github.com/samhuk/table",
   "scripts": {
