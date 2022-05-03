@@ -74,7 +74,7 @@ export const createRow = (options: RowOptions): Row => {
   const row: Row = {
     rendered: { element },
     rowData,
-    updateCellData: (fieldName: string, newValue: any) => {
+    updateCellValue: (fieldName: string, newValue: any) => {
       rowData[fieldName] = newValue
       cellsDict[fieldName].updateValue(newValue)
     },

@@ -166,7 +166,6 @@ const createFooterRow = (options: RowsOptions): FooterRow => {
 
   return {
     element: rowElement,
-    updateOnColumnOrderChange: footerRowRendererOutput.updateOnColumnOrderChange,
     updateOnDataChange: footerRowRendererOutput.updateOnDataChange,
   }
 }
@@ -407,9 +406,9 @@ export const createRows = (options: RowsOptions): Rows => {
       rows.rowsDict[newRowData.uuid] = newRow
       onDataChange()
     },
-    updateCellData: (rowUuid, fieldName, newValue) => {
+    updateCellValue: (rowUuid, fieldName, newValue) => {
       rows.rowDataList.find(rowData => rowData.uuid === rowUuid)[fieldName] = newValue
-      rows.rowsDict[rowUuid].updateCellData(fieldName, newValue)
+      rows.rowsDict[rowUuid].updateCellValue(fieldName, newValue)
       onDataChange()
     },
     measureColumnContentWidths: fieldName => Object.values(rows.rowsDict).map(r => r.measureCellContentWidth(fieldName)),

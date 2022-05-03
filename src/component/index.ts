@@ -117,8 +117,7 @@ export const createTable = <TData = any>(options: TableOptions<TData>): Table<TD
     removeRow: rows.removeRow,
     updateRowData: rows.updateRowData,
     updateTableData: rows.updateTableData,
-    updateCellData: rows.updateCellData,
-    updateColumnVisibility: null,
+    updateCellValue: rows.updateCellValue,
   }
   return table
 }
