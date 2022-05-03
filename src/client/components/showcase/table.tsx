@@ -105,7 +105,6 @@ const TABLE_OPTIONS: TableOptions = {
       options.rowElement.appendChild(spacerCell1)
 
       return {
-        updateOnColumnOrderChange: undefined,
         updateOnDataChange: rowDataList => {
           sum = 0
           rowDataList.forEach(r => sum += r.field3)
