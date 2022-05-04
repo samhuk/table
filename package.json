@@ -1,12 +1,13 @@
 {
   "name": "@samhuk/table",
-  "version": "1.0.11",
-  "description": "Vanilla JS data table component",
+  "version": "1.0.12",
+  "description": "A vanilla JS data table UI component",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist/**/*",
-    "src/component/**/*"
+    "src/component/**/*",
+    "img/**/*"
   ],
   "repository": "https://github.com/samhuk/table",
   "scripts": {

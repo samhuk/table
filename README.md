@@ -1,6 +1,6 @@
 # table
 
-Vanilla JS data table component.
+A vanilla JS data table component.
 
 ![sc1](./img/sc1.png)
 
@@ -8,7 +8,6 @@ Vanilla JS data table component.
 
 `npm i @samhuk/table`
 
-### Usage in JS/TS
 Basic usage (default column options, no custom configuration, etc.):
 
 ```typescript
@@ -49,6 +48,7 @@ There are two main ways of importing the styles for the component into your proj
 
 * Column sorting
 * Column filter button
+* Column resizing
 * Footer row
 * Row grouping (with group header row)
 * Customizable row and cell rendering
