@@ -1,6 +1,6 @@
 {
   "name": "@samhuk/table",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "A vanilla JS data table UI component",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
